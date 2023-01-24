@@ -1,0 +1,168 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: #003f88;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+#header {
+  width: 100vw;
+  height: 15vh;
+  background-color: #003f88;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#nav-bar {
+  justify-items: flex-end;
+}
+
+.container {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+}
+
+.container-home {
+  background-color: green;
+  height: 85vh;
+}
+
+.container-quemsomos {
+  background-color: blueviolet;
+  color: white;
+}
+
+.container-servicos {
+  display: flex;
+  background-color: #003f88;
+  justify-content: space-between;
+  
+}
+
+.container-planos {
+  background-color: yellow;
+  height: 90vh;
+}
+
+#div-planos {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.planos {
+  border: solid 5px #003f88;
+  text-align: center;
+  padding: 2vw;
+  
+}
+
+#plano-1 {
+  width: 15vw;
+  height: 20vh;
+}
+
+#plano-2 {
+  width: 15vw;
+  height: 30vh;
+}
+
+#plano-3 {
+  width: 15vw;
+  height: 50vh;
+}
+
+.img-predio {
+  width: 100px;
+  height: 100px;
+}
+.img-aviao {
+  width: 100px;
+  height: 100px;
+}
+.img-mapa{
+    width: 100px;
+    height: 100px;
+}
+.img-quem-somos{
+    width: 400px;
+    height: 200px;
+}
+.figure-img {
+    align-self: center;
+    width: 100px;
+    height: 100px;
+  }
+
+.p-servicos {
+    color: white;
+    margin-top: 20px;
+}
+
+.btn-servicos {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color: #003f88;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    
+  }
+
+  .btn-planos {
+  width: 180px;
+  height: 40px;
+  background-color: #003f88;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+.titulo-home {
+  color: #03254b;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#p-home {
+    margin: 10px;
+}
+
+#div-home {
+  align-self: center;
+  font-size: 17px;
+}
+
+#img-home {
+    align-self: flex-end;
+}
