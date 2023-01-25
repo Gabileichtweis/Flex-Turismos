@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./style.css">
 
     <title>Flex Turismos</title>
 </head>
 <body>
-
     <header>
         <div id="header">
-            <h1>Flex Turismos</h1>     
+            <div class="flex-turismos">
+                <h1>Flex Turismos</h1>
+            </div>
 
-            <div>
-                <nav id="nav-bar">
+            <div id="nav-bar">
+                <nav>
                     <a href="#quemsomos">Quem somos</a>
                     <a href="#servicos">Serviços</a>
                     <a href="#planos">Planos</a>
                 </nav>
             </div>
-
         </div>
     </header>
 
@@ -32,47 +35,54 @@
                 <h2 class="titulo-home">Flex</h2>  
                 <h2 class="titulo-home"> Turismos</h2> 
                 <p id="p-home">O melhor serviço para você</p>
-                <button class="btn-planos">Saiba mais!</button>
+                <button class="btn-home">Saiba mais!</button>
             </div>
 
             <figure id="img-home">
                 <img src="./images/0-main.png" alt="">
             </figure>
-            
-           
         </section>
 
         <section class="container container-quemsomos" id="quemsomos">
-            <figure>
-                <img src="./images/1-quem-somos.png" alt="imagem recepção hotel" class="img-quem-somos">
+            <figure class="img-quem-somos">
+                <img src="./images/1-quem-somos.png" alt="imagem recepção hotel" class="img-quem-somos"/>
             </figure>
             
-            <h2>Quem somos?</h2>
-                <p>
+            <div id="texto-quem-somos">
+                <h2 class="p_quem_somos">|Quem somos?</h2>
+
+                <p class="descricao_quem_somos">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eligendi neque architecto excepturi doloribus, consequuntur sequi reprehenderit modi iste dolorum optio commodi doloremque, quibusdam voluptas voluptate officia, odio quisquam. Alias.  
                 </p>
+            </div>
         </section>
 
         <section class="container container-servicos" id="servicos">
-            <h2>Serviços</h2>
-           <figure class="figure-img" >
-            <img src="./images/icon-2.png" alt="" class="img-predio">
-            <p class="p-servicos">Hospedagens</p>
-            <button class="btn-servicos">Comprar agora</button>
-           </figure>
+            <h2 class="t-servicos">Serviços</h2>
+            <br>
+            <div>
+                <figure class="figure-img">
+                    <img src="./images/icon-2.png" alt="imagem predio" class="img-predio"/>
+                </figure>
+                 <p class="p-servicos">Hospedagens</p>
+                 <button class="btn-servicos">Comprar agora</button>
+            </div>
            
-            <figure class="figure-img">
-                <img src="./images/icon-1.png" alt="" class="img-aviao">
-                <p class="p-servicos">Pacotes de viagens</p>
-                <button class="btn-servicos">Comprar agora</button>
-            </figure>
+            <div>
+                <figure class="figure-img">
+                    <img src="./images/icon-1.png" alt="" class="img-aviao">
+                </figure>
+                    <p class="p-servicos">Pacotes de viagens</p>
+                    <button class="btn-servicos">Comprar agora</button>
+            </div>
             
-            <figure class="figure-img">
-                <img src="./images/icon-3.png" alt="" class="img-mapa">
-                <p class="p-servicos">Roteiros personalizados</p>
-                <button class="btn-servicos">Comprar agora</button>
-            </figure>
-          
+            <div>
+                <figure class="figure-img">
+                    <img src="./images/icon-3.png" alt="" class="img-mapa">
+                </figure>
+                    <p class="p-servicos">Roteiros personalizados</p>
+                    <button class="btn-servicos">Comprar agora</button>
+            </div>
         </section>
         
         <section class="container container-planos" id="planos">

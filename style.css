@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -26,6 +27,10 @@ a {
   padding: 5px;
 }
 
+header{
+  display: flex;
+}
+
 #header {
   width: 100vw;
   height: 15vh;
@@ -34,38 +39,142 @@ a {
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-turismos {
+  display: flex;
+  align-self: center;    
 }
 
 #nav-bar {
-  justify-items: flex-end;
+  display: flex;
+  margin-left:200px;
 }
 
 .container {
   width: 100vw;
-  height: 50vh;
+  height: 60vh;
   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
+/* HOME */
 .container-home {
   background-color: green;
   height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
+.titulo-home {
+  color: #03254b;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#p-home {
+    margin: 10px;
+    margin: 10px;
+    color: #003f88;
+}
+
+#div-home {
+  align-self: center;
+  font-size: 17px;
+}
+
+#img-home {
+    align-self: flex-end;
+}
+
+
+
+/* QUEM SOMOS */
 .container-quemsomos {
   background-color: blueviolet;
   color: white;
+  display: flex;
+  flex-direction: row;
 }
 
+.descricao_quem_somos {
+  align-self: center;
+  text-align: left;
+}
+
+.p_quem_somos {
+  margin: 20px;
+}
+
+#texto-quem-somos{
+  width: 50vw;
+  height: 50vh;
+}
+
+.img-quem-somos{
+  width: 400px;
+  height: 200px;
+}
+
+
+
+/* SERVIÇOS */
 .container-servicos {
   display: flex;
   background-color: #003f88;
-  justify-content: space-between;
-  
+  justify-content: space-evenly;  
 }
 
+.t-servicos {
+  color: white;
+}
+
+.img-predio {
+  width: 100px;
+  height: 100px;
+}
+
+.img-aviao {
+  width: 100px;
+  height: 100px;
+}
+
+.img-mapa{
+    width: 100px;
+    height: 100px;
+}
+
+.p-servicos {
+  color: white;
+  margin-top: 20px;
+}
+
+.btn-servicos {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  color: #003f88;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;  
+}
+
+.figure-img {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+/* PLANOS */
 .container-planos {
   background-color: yellow;
   height: 90vh;
+  justify-content: center;
 }
 
 #div-planos {
@@ -76,8 +185,7 @@ a {
 .planos {
   border: solid 5px #003f88;
   text-align: center;
-  padding: 2vw;
-  
+  padding: 2vw;  
 }
 
 #plano-1 {
@@ -95,74 +203,11 @@ a {
   height: 50vh;
 }
 
-.img-predio {
-  width: 100px;
-  height: 100px;
-}
-.img-aviao {
-  width: 100px;
-  height: 100px;
-}
-.img-mapa{
-    width: 100px;
-    height: 100px;
-}
-.img-quem-somos{
-    width: 400px;
-    height: 200px;
-}
-.figure-img {
-    align-self: center;
-    width: 100px;
-    height: 100px;
-  }
-
-.p-servicos {
-    color: white;
-    margin-top: 20px;
-}
-
-.btn-servicos {
-    width: 100px;
-    height: 30px;
-    background-color: white;
-    color: #003f88;
-    border-radius: 20px;
-    border: none;
-    margin-top: 20px;
-    
-  }
-
-  .btn-planos {
-  width: 180px;
+.btn-planos, .btn-home {
+  width: 240px;
   height: 40px;
   background-color: #003f88;
   color: white;
   border-radius: 20px;
   border: none;
-}
-
-.titulo-home {
-  color: #03254b;
-  font-size: 60px;
-  font-weight: bold;
-}
-
-.container-home {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-#p-home {
-    margin: 10px;
-}
-
-#div-home {
-  align-self: center;
-  font-size: 17px;
-}
-
-#img-home {
-    align-self: flex-end;
 }
