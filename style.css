@@ -5,13 +5,13 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
 }
 
 body {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 footer {
@@ -19,6 +19,10 @@ footer {
   height: 10vh;
   background-color: #003f88;
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 a {
@@ -56,18 +60,27 @@ header{
   width: 100vw;
   height: 60vh;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: row; 
 }
 
 /* HOME */
 .container-home {
-  background-color: green;
   height: 85vh;
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+}
+
+#img-home {
+  animation: imagemHome 5s;
+}
+
+@keyframes imagemHome {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .titulo-home {
@@ -80,6 +93,29 @@ header{
     margin: 10px;
     margin: 10px;
     color: #003f88;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid black;
+    animation: digitando 2s steps(13) infinite alternate,
+      barrinha 800ms steps(13) infinite normal;
+}
+
+@keyframes digitando {
+  from {
+      width: 0%;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+@keyframes barrinha {
+  from {
+      border-color: black;
+  }
+  to {
+      border-color: transparent;
+  }
 }
 
 #div-home {
@@ -87,55 +123,60 @@ header{
   font-size: 17px;
 }
 
-#img-home {
-    align-self: flex-end;
-}
-
-
 
 /* QUEM SOMOS */
 .container-quemsomos {
-  background-color: blueviolet;
-  color: white;
-  display: flex;
-  flex-direction: row;
-}
-
-.descricao_quem_somos {
-  align-self: center;
-  text-align: left;
-}
-
-.p_quem_somos {
-  margin: 20px;
-}
-
-#texto-quem-somos{
-  width: 50vw;
-  height: 50vh;
+  justify-content: center;
+  align-items: center; 
 }
 
 .img-quem-somos{
-  width: 400px;
-  height: 200px;
+  width: 450px;
 }
 
+#texto-quem-somos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+  height: 50vh;
+}
 
+.p_quem_somos {
+  color: #003f88;
+}
 
 /* SERVIÇOS */
 .container-servicos {
-  display: flex;
   background-color: #003f88;
-  justify-content: space-evenly;  
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icones-services {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .t-servicos {
   color: white;
+  align-self: flex-start;
+  width: 15vw;
+  height: 10vh;
+  margin-left: 300px;
+}
+
+.hospedagens, .pacotes, .roteiros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  height: 25vh;
 }
 
 .img-predio {
   width: 100px;
-  height: 100px;
 }
 
 .img-aviao {
@@ -168,24 +209,39 @@ header{
   height: 100px;
 }
 
-
-
 /* PLANOS */
 .container-planos {
-  background-color: yellow;
+  flex-direction: column;
   height: 90vh;
-  justify-content: center;
+  align-items: center;
+}
+
+.t-planos {
+  align-self: flex-start;
+  margin-left: 180px;
+  margin-top: 50px;
 }
 
 #div-planos {
+  width: 100vw;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 .planos {
   border: solid 5px #003f88;
-  text-align: center;
-  padding: 2vw;  
+  text-align: justify;
+  padding: 2vw;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+hr {
+  color: #003f88;
+  height: 5px;
 }
 
 #plano-1 {
@@ -195,12 +251,12 @@ header{
 
 #plano-2 {
   width: 15vw;
-  height: 30vh;
+  height: 25vh;
 }
 
 #plano-3 {
   width: 15vw;
-  height: 50vh;
+  height: 30vh;
 }
 
 .btn-planos, .btn-home {
